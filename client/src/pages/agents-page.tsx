@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { Agent } from "@shared/schema";
 import AgentCard from "@/components/agent-card";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Loader2, Search } from "lucide-react";

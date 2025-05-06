@@ -8,14 +8,14 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
-import { useNavigate } from "wouter";
+import { useLocation } from "wouter";
 
 export default function SearchForm() {
   const [location, setLocation] = useState("");
   const [propertyType, setPropertyType] = useState("");
   const [budget, setBudget] = useState("");
   const [bedrooms, setBedrooms] = useState("");
-  const [, navigate] = useNavigate();
+  const [, navigate] = useLocation();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

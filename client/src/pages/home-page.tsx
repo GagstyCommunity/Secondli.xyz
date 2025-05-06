@@ -4,7 +4,7 @@ import FeaturedProperties from "@/components/featured-properties";
 import MicroCommunities from "@/components/micro-communities";
 import TopAgents from "@/components/top-agents";
 import CallToAction from "@/components/call-to-action";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 export default function HomePage() {
   return (

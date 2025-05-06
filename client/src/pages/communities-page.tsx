@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { Community } from "@shared/schema";
 import CommunityCard from "@/components/community-card";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Loader2, Search } from "lucide-react";

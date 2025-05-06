@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useLocation, useSearch } from "wouter";
 import { Property } from "@shared/schema";
 import PropertyCard from "@/components/property-card";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import {
   Select,
   SelectContent,
