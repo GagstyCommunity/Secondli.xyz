@@ -185,7 +185,15 @@ export default function AuthPage() {
                         <FormItem>
                           <FormLabel>Phone (optional)</FormLabel>
                           <FormControl>
-                            <Input type="tel" {...field} autoComplete="tel" />
+                            <Input 
+                              type="tel" 
+                              value={field.value || ''} 
+                              onChange={field.onChange}
+                              onBlur={field.onBlur}
+                              name={field.name}
+                              ref={field.ref}
+                              autoComplete="tel" 
+                            />
                           </FormControl>
                           <FormMessage />
                         </FormItem>

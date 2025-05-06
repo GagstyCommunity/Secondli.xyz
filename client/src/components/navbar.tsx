@@ -42,24 +42,24 @@ export default function Navbar() {
             </div>
             <div className="hidden md:ml-6 md:flex md:space-x-8">
               <Link href="/">
-                <a className={`${isActive("/") ? "border-b-2 border-primary text-primary" : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"} px-1 pt-1 font-medium font-inter`}>
+                <span className={`${isActive("/") ? "border-b-2 border-primary text-primary" : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"} px-1 pt-1 font-medium font-inter cursor-pointer`}>
                   Home
-                </a>
+                </span>
               </Link>
               <Link href="/properties">
-                <a className={`${isActive("/properties") ? "border-b-2 border-primary text-primary" : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"} px-1 pt-1 font-medium font-inter`}>
+                <span className={`${isActive("/properties") ? "border-b-2 border-primary text-primary" : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"} px-1 pt-1 font-medium font-inter cursor-pointer`}>
                   Properties
-                </a>
+                </span>
               </Link>
               <Link href="/agents">
-                <a className={`${isActive("/agents") ? "border-b-2 border-primary text-primary" : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"} px-1 pt-1 font-medium font-inter`}>
+                <span className={`${isActive("/agents") ? "border-b-2 border-primary text-primary" : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"} px-1 pt-1 font-medium font-inter cursor-pointer`}>
                   Agents
-                </a>
+                </span>
               </Link>
               <Link href="/communities">
-                <a className={`${isActive("/communities") ? "border-b-2 border-primary text-primary" : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"} px-1 pt-1 font-medium font-inter`}>
+                <span className={`${isActive("/communities") ? "border-b-2 border-primary text-primary" : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"} px-1 pt-1 font-medium font-inter cursor-pointer`}>
                   Communities
-                </a>
+                </span>
               </Link>
             </div>
           </div>
@@ -81,12 +81,12 @@ export default function Navbar() {
                   <DropdownMenuSeparator />
                   <DropdownMenuItem asChild>
                     <Link href="/dashboard">
-                      <a className="cursor-pointer w-full">Dashboard</a>
+                      <span className="cursor-pointer w-full">Dashboard</span>
                     </Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
                     <Link href="/profile">
-                      <a className="cursor-pointer w-full">Profile</a>
+                      <span className="cursor-pointer w-full">Profile</span>
                     </Link>
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
@@ -134,48 +134,48 @@ export default function Navbar() {
         <div className="md:hidden">
           <div className="pt-2 pb-3 space-y-1">
             <Link href="/">
-              <a
+              <span
                 className={`${
                   isActive("/")
                     ? "bg-primary text-white"
                     : "text-gray-700 hover:bg-gray-50"
-                } block pl-3 pr-4 py-2 text-base font-medium font-inter`}
+                } block pl-3 pr-4 py-2 text-base font-medium font-inter cursor-pointer`}
               >
                 Home
-              </a>
+              </span>
             </Link>
             <Link href="/properties">
-              <a
+              <span
                 className={`${
                   isActive("/properties")
                     ? "bg-primary text-white"
                     : "text-gray-700 hover:bg-gray-50"
-                } block pl-3 pr-4 py-2 text-base font-medium font-inter`}
+                } block pl-3 pr-4 py-2 text-base font-medium font-inter cursor-pointer`}
               >
                 Properties
-              </a>
+              </span>
             </Link>
             <Link href="/agents">
-              <a
+              <span
                 className={`${
                   isActive("/agents")
                     ? "bg-primary text-white"
                     : "text-gray-700 hover:bg-gray-50"
-                } block pl-3 pr-4 py-2 text-base font-medium font-inter`}
+                } block pl-3 pr-4 py-2 text-base font-medium font-inter cursor-pointer`}
               >
                 Agents
-              </a>
+              </span>
             </Link>
             <Link href="/communities">
-              <a
+              <span
                 className={`${
                   isActive("/communities")
                     ? "bg-primary text-white"
                     : "text-gray-700 hover:bg-gray-50"
-                } block pl-3 pr-4 py-2 text-base font-medium font-inter`}
+                } block pl-3 pr-4 py-2 text-base font-medium font-inter cursor-pointer`}
               >
                 Communities
-              </a>
+              </span>
             </Link>
           </div>
           <div className="pt-4 pb-3 border-t border-gray-200">
@@ -194,14 +194,14 @@ export default function Navbar() {
                 </div>
                 <div className="mt-3 space-y-1">
                   <Link href="/dashboard">
-                    <a className="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100">
+                    <span className="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100 cursor-pointer">
                       Dashboard
-                    </a>
+                    </span>
                   </Link>
                   <Link href="/profile">
-                    <a className="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100">
+                    <span className="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100 cursor-pointer">
                       Profile
-                    </a>
+                    </span>
                   </Link>
                   <button
                     onClick={handleLogout}
